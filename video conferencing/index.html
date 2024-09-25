@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Conferencing App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Video Conferencing App</h1>
+    </header>
+
+    <div class="container">
+        <div class="video-container">
+            <div class="video-box">
+                <h3>Your Video</h3>
+                <video id="localVideo" autoplay muted></video>
+            </div>
+            <div class="video-box">
+                <h3>Remote Video</h3>
+                <video id="remoteVideo" autoplay></video>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <div id="chat-messages" class="chat-box"></div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Type a message">
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="start-call" class="btn-primary">Start Call</button>
+            <button id="end-call" class="btn-danger">End Call</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Video Conferencing App | All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
